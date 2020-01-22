@@ -34,9 +34,16 @@ class Kettle {
     }
   }
 
+  pourTea() { 
+    if(kettle.water - 250 == kettle.water >= 0)
+    return kettle.water - 250
+  }
+
 }
 
 kettle = new Kettle()
+
+
 
 function makeTea() {
   if(kettle) {
