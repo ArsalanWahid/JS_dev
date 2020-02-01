@@ -1,0 +1,166 @@
+.test-animation {
+  width: 100px;
+  height: 100px;
+  animation: rainbow 2s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  position: relative;
+}
+.test-animation-1 {
+  width: 100px;
+  height: 100px;
+  animation: rainbow-1 2s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  position: relative;
+}
+.test-animation-2 {
+  width: 100px;
+  height: 100px;
+  animation: rainbow-2 2s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  position: relative;
+}
+.test-animation-3 {
+  width: 100px;
+  height: 100px;
+  animation: rainbow-3 2s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  position: relative;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: violet;
+    top: 30px;
+  }
+
+  15% {
+    background-color: indigo;
+  }
+
+  30% {
+    background-color: blue;
+    top:30px;
+  }
+
+  45% {
+    background-color: green;
+  }
+
+  60% {
+    background-color: yellow;
+    top: -30px;
+  }
+
+  75% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: red;
+    top: 30px;
+  }
+}
+@keyframes rainbow-1 {
+  0% {
+    background-color: violet;
+    top: -30px;
+  }
+
+  15% {
+    background-color: indigo;
+  }
+
+  30% {
+    background-color: blue;
+    top: -30px;
+  }
+
+  45% {
+    background-color: green;
+  }
+
+  60% {
+    background-color: yellow;
+    top: 30px;
+  }
+
+  75% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: red;
+    top: -30px;
+  }
+}
+@keyframes rainbow-2 {
+  0% {
+    background-color: violet;
+    top: 30px;
+  }
+
+  15% {
+    background-color: indigo;
+    
+  }
+
+  30% {
+    background-color: blue;
+    top:30px;
+  }
+
+  45% {
+    background-color: green;
+  }
+
+  60% {
+    background-color: yellow;
+    top: -30px;
+  }
+
+  75% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: red;
+    top: 30px;
+  }
+}
+@keyframes rainbow-3 {
+  0% {
+    background-color: violet;
+    top: -30px;
+  }
+
+  15% {
+    background-color: indigo;
+  }
+
+  30% {
+    background-color: blue;
+    top: -30px;
+  }
+
+  45% {
+    background-color: green;
+  }
+
+  60% {
+    background-color: yellow;
+    top: 30px;
+  }
+
+  75% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: red;
+    top: -30px;
+  }
+}

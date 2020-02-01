@@ -1,0 +1,101 @@
+.container {
+  background: #1E90FF;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: white;
+  border: 10px solid #1E90FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle-2 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: white;
+  border: 10px solid #1E90FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-eye{
+  width: 200px;
+  height: 100px;
+  background: red;
+  border-radius: 100px / 50px;
+}
+
+#heart {
+  position: relative;
+  width: 50px;
+  height: 45px;
+  transition: all 0.2s ease-in-out;
+  animation: swing 2s ease;
+  animation-iteration-count: infinite;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 0;
+  width: 25px;
+  height: 40px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+#heart:hover::before,
+#heart:hover::after {
+  background-color: orangered;
+}
+
+
+@keyframes swing {
+  15% {
+  transform: scale(1.5);
+  }
+  30% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.5);
+  }
+  65% {
+  transform: scale(1);
+  }
+  80% {
+  transform: scale(1.5);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
