@@ -31,6 +31,13 @@
   position: relative;
 }
 
+.lontan {
+  width: 200px;
+  height: 200px;
+  animation: circleMaker 4s ease-out infinite alternate-reverse;
+  background-color: red;
+}
+
 @keyframes rainbow {
   0% {
     background-color: violet;
@@ -162,5 +169,48 @@
   100% {
     background-color: red;
     top: -30px;
+  }
+}
+
+@keyframes circleMaker {
+  0% {
+  }10% {
+    border-radius: 20%; 
+    border-top: 5px solid green;
+  }20% {
+    border-radius: 25%; 
+    border-top: 5px solid green;
+    border-bottom: 5px solid blue; 
+  }30% {
+    border-radius: 25%; 
+    border-top: 5px solid green;
+    border-bottom: 5px solid blue; 
+  }40% {
+    border-radius: 30%; 
+    border-top: 5px solid green;
+    border-bottom: 5px solid purple; 
+  }50% {
+    border-radius: 35%; 
+    border-top: 5px solid green;
+    border-bottom: 5px solid purple; 
+  }60% {
+    border-radius: 35%;
+    border-top: 5px solid green;
+    border-bottom: 5px solid red;  
+  }70% {
+    border-radius: 35%;
+    border-top: 5px solid green;
+    border-bottom: 5px solid red; 
+  }80% {
+    border-radius: 40%;
+    border: 5px solid yellow; 
+  }90% {
+    border-radius: 45%;
+    border: 5px solid yellow; 
+    background-color: blue;
+  }100% {
+    border-radius: 50%;
+    border: 5px solid yellow; 
+    background-color: blue;
   }
 }
